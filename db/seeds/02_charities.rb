@@ -15,8 +15,9 @@ youngcaritas = User.create(
   role: "Charity",
   webpage: "http://www.youngcaritas.de/lokalisiert/berlin"
 )
-file1 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/young-caritas_l7dvam.jpg')
-youngcaritas.photo.attach(io:file1, filename:'logo.jpg', content_type: 'image/jpg')
+charity1_img = open('public/images/charity1_img.jpg')
+# file1 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/young-caritas_l7dvam.jpg')
+youngcaritas.photo.attach(io:charity1_img, filename:'logo.jpg', content_type: 'image/jpg')
 
 
 #charity 2
@@ -30,8 +31,9 @@ servethecitiy = User.create(
   role: "Charity",
   webpage: "https://www.servethecity.berlin/en/"
 )
-file2 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/servethecity_t7mhhs.jpg')
-servethecitiy.photo.attach(io:file2, filename:'logo1.jpg', content_type: 'image/jpg')
+# file2 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/servethecity_t7mhhs.jpg')
+charity2_img = open('public/images/charity2_img.jpg')
+servethecitiy.photo.attach(io:charity2_img, filename:'logo1.jpg', content_type: 'image/jpg')
 
 
 # charity 3
@@ -45,8 +47,9 @@ berlinerobdachlosen = User.create(
   role: "Charity",
   webpage: "https://www.berliner-obdachlosenhilfe.de/"
 )
-file3 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/BerlinerObdachlose_z3xzdk.png')
-berlinerobdachlosen.photo.attach(io:file3, filename:'logo2.png', content_type: 'image/png')
+# file3 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/BerlinerObdachlose_z3xzdk.png')
+charity3_img = open('public/images/charity3_img.png')
+berlinerobdachlosen.photo.attach(io:charity3_img, filename:'charity3_img.png', content_type: 'image/png')
 
 
 
@@ -61,8 +64,9 @@ familienzentrum = User.create(
   role: "Charity",
   webpage: "http://familienzentrum-adalbertstrasse.de/"
 )
-file4 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/Familenzentrum-Adalbert_b2ofcd.png')
-familienzentrum.photo.attach(io:file4, filename:'logo3.png', content_type: 'image/png')
+# file4 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/Familenzentrum-Adalbert_b2ofcd.png')
+charity4_img = open('public/images/charity4_img.png')
+familienzentrum.photo.attach(io:charity4_img, filename:'charity4_img.png', content_type: 'image/png')
 
 
 #charity 5
@@ -76,8 +80,9 @@ junkfood = User.create(
   role: "Charity",
   webpage: "https://www.facebook.com/TRJFPBerlin"
 )
-file5 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/junk_food_proyect_wstadt.jpg')
-junkfood.photo.attach(io:file5, filename:'logo4.jpg', content_type: 'image/jpg')
+# file5 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/junk_food_proyect_wstadt.jpg')
+charity5_img = open('public/images/charity5_img.jpg')
+junkfood.photo.attach(io:charity5_img, filename:'charity5_img.jpg', content_type: 'image/jpg')
 
 
 #charity 6
@@ -91,8 +96,9 @@ verbundtreptow = User.create(
   role: "Charity",
   webpage: "https://www.psv-treptow.de/"
 )
-file6 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/Psychosozialer_Verbund_Treptow_vlredx.jpg')
-verbundtreptow.photo.attach(io:file6, filename:'logo5.jpg', content_type:'image/jpg')
+# file6 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/Psychosozialer_Verbund_Treptow_vlredx.jpg')
+charity6_img = open('public/images/charity6_img.jpg')
+verbundtreptow.photo.attach(io:charity6_img, filename:'charity6_img', content_type:'image/jpg')
 
 #charity 7
 speak = User.create(
@@ -105,8 +111,9 @@ speak = User.create(
   role: "Charity",
   webpage: "https://www.speak.social/de/"
 )
-file7 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/SPEAk_xxo1co.png')
-speak.photo.attach(io:file7, filename:'logo6.png', content_type: 'image/png')
+# file7 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/SPEAk_xxo1co.png')
+charity7_img = open('public/images/charity7_img.png')
+speak.photo.attach(io:charity7_img, filename:'charity7_img', content_type: 'image/png')
 
 #charity 8
 dwb = User.create(
@@ -119,8 +126,9 @@ dwb = User.create(
   role: "Charity",
   webpage: "https://www.diakonie-stadtmitte.de/integration-migration/fluechtlingswohnheim-zeughofstrasse/ueber-das-wohnheim/"
 )
-file8 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/Diakonie_okdcik.png')
-dwb.photo.attach(io:file8, filename:'logo7.png', content_type: 'image/png')
+# file8 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/Diakonie_okdcik.png')
+charity8_img = open('public/images/charity8_img.png')
+dwb.photo.attach(io:charity8_img, filename:'charity8_img.png', content_type: 'image/png')
 
 #charity 9
 berlinerstadtmission = User.create(
@@ -134,8 +142,9 @@ berlinerstadtmission = User.create(
   webpage: "https://www.berliner-stadtmission.de/"
 )
 # file9 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583415486/iAoWJdUmYbWPVYfiixqG8BG8.png')
-file9 = open('public/images/charity9_img.png')
-berlinerstadtmission.photo.attach(io:file9, filename:'logo8.png', content_type:'image/png')
+# charity=_img = open('public/images/charity=_img.jpg')
+charity9_img = open('public/images/charity9_img.png')
+berlinerstadtmission.photo.attach(io:charity9_img, filename:'charity9_img.png', content_type:'image/png')
 
 
 #charity 10
@@ -149,8 +158,9 @@ oceannow = User.create(
   role: "Charity",
   webpage: "https://www.ocean-now.org/"
 )
-file10 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/Ocean-now_pllid5.jpg')
-oceannow.photo.attach(io:file10, filename:'logo9.jpg', content_type: 'image/jpg')
+# file10 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/Ocean-now_pllid5.jpg')
+charity10_img = open('public/images/charity10_img.jpg')
+oceannow.photo.attach(io:charity10_img, filename:'charity10_img.jpg', content_type: 'image/jpg')
 
 
 #charity 11
@@ -164,8 +174,9 @@ unionhilfwerk = User.create(
   role: "Charity",
   webpage: "https://www.unionhilfswerk.de/"
 )
-file11= URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321092/CHIP-IN/Charities%20pics/unionshilfwerk_hbk7e7.jpg')
-unionhilfwerk.photo.attach(io:file11, filename:'logo10.jpg', content_type: 'image/jpg')
+# file11= URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321092/CHIP-IN/Charities%20pics/unionshilfwerk_hbk7e7.jpg')
+charity11_img = open('public/images/charity11_img.jpg')
+unionhilfwerk.photo.attach(io:charity11_img, filename:'charity11_img.jpg', content_type: 'image/jpg')
 
 #charity 12
 casablanca = User.create(
@@ -178,8 +189,9 @@ casablanca = User.create(
   role: "Charity",
   webpage: "https://www.g-casablanca.de/"
 )
-file12= URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/casablanca_xeitwr.jpg')
-casablanca.photo.attach(io:file12, filename: 'logo11.jpg', content_type: 'image/jpg')
+# file12= URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/casablanca_xeitwr.jpg')
+charity12_img = open('public/images/charity12_img.jpg')
+casablanca.photo.attach(io:charity12_img, filename: 'charity12_img.jpg', content_type: 'image/jpg')
 
 #charity 13
 keinabseits = User.create(
@@ -192,8 +204,9 @@ keinabseits = User.create(
   role: "Charity",
   webpage: "https://www.kein-abseits.de/"
 )
-file13= URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/keineabseit_wzo4fj.jpg')
-keinabseits.photo.attach(io:file13, filename: 'logo12.jpg', content_type: 'image/jpg')
+# file13= URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/keineabseit_wzo4fj.jpg')
+charity13_img = open('public/images/charity13_img.jpg')
+keinabseits.photo.attach(io:charity13_img, filename: 'charity13_img.jpg', content_type: 'image/jpg')
 
 #charity 14
 solinar = User.create(
@@ -206,8 +219,9 @@ solinar = User.create(
   role: "Charity",
   webpage: "https://www.kein-abseits.de/"
 )
-file14 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/solinar_th0wcu.jpg')
-solinar.photo.attach(io:file14, filename: 'logo13.jpg', content_type: 'image/jpg')
+# file14 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/solinar_th0wcu.jpg')
+charity14_img = open('public/images/charity14_img.jpg')
+solinar.photo.attach(io:charity14_img, filename: 'charity14_img.jpg', content_type: 'image/jpg')
 
 
 #charity 15
@@ -221,5 +235,6 @@ stepsforpeace = User.create(
   role: "Charity",
   webpage: "http://www.steps-for-peace.org/en/"
   )
-file15 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321092/CHIP-IN/Charities%20pics/stepsforpeace_i0tzzh.png')
-stepsforpeace.photo.attach(io:file15, filename: 'logo14.jpg', content_type: 'image/png')
+# file15 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321092/CHIP-IN/Charities%20pics/stepsforpeace_i0tzzh.png')
+charity15_img = open('public/images/charity15_img.png')
+stepsforpeace.photo.attach(io:charity15_img, filename: 'charity15_img.jpg', content_type: 'image/png')
