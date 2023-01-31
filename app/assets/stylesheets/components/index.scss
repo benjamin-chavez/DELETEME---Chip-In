@@ -1,48 +1,29 @@
 // Import your components CSS files here.
 @import "alert";
 @import "avatar";
-@import "navbar";
+@import "button";
+@import "card";
+@import "container";
+@import "footer";
 @import "map";
-@import "typography";
 @import "modal";
-
-
-
-
-
-
+@import "_navbar";
+@import "typography";
 
 @media (min-width: 100px) and (max-width: 1200px) {
-    #map {
-        display: none;
-    }
-    #indexcontainer {
-      width: 100vw !important;
+  #map {
+    display: none;
+  }
+  #indexcontainer {
+    width: 100vw !important;
   }
 }
 
 @media (min-width: 576px) {
-    #map {
-        display: block;
-    }
-
+  #map {
+    display: block;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .error {
   padding: 10px;
@@ -61,5 +42,4 @@
 #search_category {
   width: 80%;
   margin-left: 10px;
-
 }

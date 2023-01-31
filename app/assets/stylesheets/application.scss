@@ -11,16 +11,14 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
-@import "users/show";
-@import "components/card";
-@import "components/button";
-@import "components/footer";
+@import "users/index";
 @import "devise/devise";
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
-  background-color: white;
+  background-color: rgb(243, 0, 0);
 }
 
 .content {
@@ -31,5 +29,3 @@ html, body {
 .push {
   height: 100px;
 }
-
-

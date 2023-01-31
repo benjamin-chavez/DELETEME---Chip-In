@@ -1,11 +1,12 @@
 
 #####################################
-puts 'Destroying all volunteers.. '
+puts 'Destroying all Volunteers.. '
 User.where(role: 'Volunteer').destroy_all
 
-puts 'Creating volunteers...'
+puts 'Creating Volunteers...'
 
 # Volunteer 1
+puts 'Creating Volunteer 1'
 luisito = User.create(
   username:"topdesigner",
   password: "1234556",
@@ -20,7 +21,8 @@ luisito = User.create(
 volunteer1_img = open('public/images/volunteer1_img.jpg')
 luisito.photo.attach(io:volunteer1_img, filename:'volunteer1_img.jpg', content_type: 'image/jpg')
 
-# volunteer 2
+# Volunteer 2
+puts 'Creating Volunteer 2'
 daniel = User.create(
   username:"greekgod",
   password: "1234556",
@@ -38,7 +40,8 @@ daniel.photo.attach(io:volunteer2_img, filename:'volunteer2_img.png', content_ty
 
 
 
-# volunteer 3
+# Volunteer 3
+puts 'Creating Volunteer 3'
 jean = User.create(
   username: "bestdj",
   password: "1234556",
@@ -54,7 +57,8 @@ jean = User.create(
 volunteer3_img = open('public/images/volunteer3_img.jpg')
 jean.photo.attach(io:volunteer3_img, filename:'volunteer3_img.jpg', content_type: 'image/jpg')
 
-#volunteer 4
+# Volunteer 4
+puts 'Creating Volunteer 4'
 claire = User.create(
   username: "clairetheTA",
   password: "1234556",
@@ -70,7 +74,8 @@ claire = User.create(
 volunteer4_img = open('public/images/volunteer4_img.jpg')
 jean.photo.attach(io:volunteer4_img, filename:'volunteer4_img.jpg', content_type: 'image/jpg')
 
-#volunteer 5
+# Volunteer 5
+puts 'Creating Volunteer 5'
 tim = User.create(
   username: "Timsitopapito",
   password: "1234556",
@@ -86,7 +91,8 @@ tim = User.create(
 volunteer5_img = open('public/images/volunteer5_img.jpg')
 tim.photo.attach(io:volunteer5_img, filename:'volunteer5_img.jpg', content_type: 'image/jpg')
 
-#volunteer 6
+# Volunteer 6
+puts 'Creating Volunteer 6'
 abby = User.create(
   username: "Abby",
   password: "1234556",
