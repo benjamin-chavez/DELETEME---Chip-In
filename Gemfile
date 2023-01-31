@@ -33,3 +33,9 @@ group :development, :test do
 end
 
 gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
+# gem 'hirb'
+# gem 'hirb-unicode'
+# gem 'colorize', '~> 0.8.1'
+# gem 'fancy_irb', '~> 1.1'
+# gem 'geokit', '~> 1.11'
+# gem 'rufo'

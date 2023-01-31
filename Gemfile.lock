@@ -170,6 +170,7 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
+    rufo (0.13.0)
     sassc (2.2.1)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -238,6 +239,7 @@ DEPENDENCIES
   puma
   rails (= 5.2.4.1)
   redis
+  rufo
   sassc-rails
   simple_form
   spring
